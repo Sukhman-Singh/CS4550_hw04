@@ -18,7 +18,7 @@ defmodule Practice.Factor do
     if (x === 1) do
       acc
     else
-      findFactors(div(x, findSmallestFactor(x, 2)), [findSmallestFactor(x, 2)] ++ acc)
+      findFactors(div(x, findSmallestFactor(x, 2)), acc ++ [findSmallestFactor(x, 2)])
     end
   end
 
