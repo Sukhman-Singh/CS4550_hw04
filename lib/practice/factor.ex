@@ -12,7 +12,6 @@ defmodule Practice.Factor do
     x
     |> parse_int()
     |> findFactors([])
-    |> Enum.join(" ")
   end
 
   def findFactors(x, acc) do
